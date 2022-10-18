@@ -1,6 +1,6 @@
 /**
- * This program displays the numbers that are multiples of 5 from 0 to 100 using
- * a for loop.
+ * Este programa muestra los números múltiplos de 5 de 0 a 100 utilizando un
+ * bucle for.
  * 
  * @autor Marina Ruiz
  */

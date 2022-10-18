@@ -1,6 +1,6 @@
 /**
- * This program displays the numbers from 320 to 160, counting 20 by 20 using a
- * do-while loop.
+ * Este programa muestra los números del 320 al 160, contando de 20 en 20
+ * utilizando un bucle do-while.
  * 
  * @autor Marina Ruiz
  */

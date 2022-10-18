@@ -1,5 +1,6 @@
 /**
- * This program displays the numbers from 320 to 160, counting backwards 20 by 20 using a for loop.
+ * Este programa muestra los números del 320 al 160, contando de 20 en 20 hacia
+ * atrás utilizando un bucle for.
  * 
  * @autor Marina Ruiz
  */
