@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Escribe un programa que lea un número n e imprima una pirámide de números con
@@ -12,10 +11,12 @@ import java.util.Scanner;
  * @autor Marina Ruiz
  */
 
+import java.util.Scanner;
+
 public class Ejercicio24 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Por favor, introduce un número: ");
+        System.out.print("Por favor, introduce la altura de la pirámide: ");
         int n = s.nextInt();
         s.close();
         for (int i = 1; i <= n; i++) {
