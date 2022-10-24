@@ -12,13 +12,11 @@ public class Ejercicio25 {
 
     public static long reverseNum(long num) {
         long reversedNum = 0;
-        while (num / 10 > 0) {
+        while (num > 0) {
             long lastDigit = num % 10;
             reversedNum = reversedNum * 10 + lastDigit;
             num /= 10;
         }
-        long lastDigit = num % 10;
-        reversedNum = reversedNum * 10 + lastDigit;
         return reversedNum;
     }
 

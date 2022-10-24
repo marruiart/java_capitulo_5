@@ -28,6 +28,7 @@ public class Ejercicio49 {
         int num;
         int max = 0;
         int min = (int) Math.pow(2, 32);
+        System.out.print(min);
         System.out.print(min + "\n");
         float average;
         int sum = 0;
