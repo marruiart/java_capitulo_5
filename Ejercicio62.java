@@ -21,7 +21,7 @@ public class Ejercicio62 {
         int lastDigit;
         int luck = 0;
         int badLuck = 0;
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             lastDigit = tmp % 10;
             if (lastDigit == 3 || lastDigit == 7 || lastDigit == 8 || lastDigit == 9)
                 luck++;
@@ -29,11 +29,6 @@ public class Ejercicio62 {
                 badLuck++;
             tmp /= 10;
         }
-        lastDigit = tmp % 10;
-        if (lastDigit == 3 || lastDigit == 7 || lastDigit == 8 || lastDigit == 9)
-            luck++;
-        else
-            badLuck++;
 
         if (luck > badLuck)
             System.out.printf("%d es un número de la suerte!", num);

@@ -21,15 +21,13 @@ public class Ejercicio58 {
         int tmp = num;
         int lastDigit;
         int numLength = 0;
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             lastDigit = tmp % 10;
             sum += lastDigit;
             tmp /= 10;
             numLength++;
         }
-        lastDigit = tmp % 10;
-        sum += lastDigit;
-        numLength++;
+
         float average = sum / numLength;
         System.out.printf("La media de los dígitos de %d es %.2f", num, average);
     }

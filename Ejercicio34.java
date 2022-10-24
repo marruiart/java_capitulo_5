@@ -59,9 +59,10 @@ public class Ejercicio34 {
         long lastDigit;
         long oddNum = 0;
         long evenNum = 0;
-        long tmp = num1 * 10;
-        while (tmp / 10 > 0) {
-            lastDigit = num1 % 10;
+        long tmp = num1;
+        while (tmp > 0) {
+
+            lastDigit = num2 % 10;
             if (lastDigit % 2 == 0) {
                 evenNum *= 10;
                 evenNum += lastDigit;
@@ -70,7 +71,7 @@ public class Ejercicio34 {
                 oddNum += lastDigit;
             }
 
-            lastDigit = num2 % 10;
+            lastDigit = num1 % 10;
             if (lastDigit % 2 == 0) {
                 evenNum *= 10;
                 evenNum += lastDigit;

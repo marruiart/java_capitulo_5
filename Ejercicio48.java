@@ -29,14 +29,12 @@ public class Ejercicio48 {
             long tmp = num;
             boolean isInNumber = false;
             long lastDigit;
-            while (tmp / 10 > 0) {
+            while (tmp > 0) {
                 lastDigit = tmp % 10;
                 if (lastDigit == i)
                     isInNumber = true;
                 tmp /= 10;
             }
-            if (tmp % 10 == i)
-                isInNumber = true;
 
             if (isInNumber == true)
                 digitsInNum += i + " ";

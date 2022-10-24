@@ -23,9 +23,9 @@ public class Ejercicio32 {
         s.close();
 
         long evenNums = 0;
-        long tmp = num * 10;
+        long tmp = num;
         long lastDigit;
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             lastDigit = (num % 10);
             if (lastDigit % 2 == 0) {
                 evenNums *= 10;
@@ -37,8 +37,8 @@ public class Ejercicio32 {
 
         long sum = 0;
         String evenString = "";
-        tmp = evenNums * 10;
-        while (tmp / 10 > 0) {
+        tmp = evenNums;
+        while (tmp > 0) {
             sum += (evenNums % 10);
             evenString += (evenNums % 10) + " ";
             evenNums /= 10;

@@ -36,10 +36,10 @@ public class Ejercicio26 {
         s.close();
 
         String strPositions = "";
-        long tmp = numHay * 10;
+        long tmp = numHay;
         long reverseNumHay = reverseNum(numHay);
         int position = 0;
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             long lastDigit = reverseNumHay % 10;
             if (lastDigit == needle)
                 strPositions += (position + 1) + " ";

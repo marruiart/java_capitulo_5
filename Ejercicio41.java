@@ -20,7 +20,7 @@ public class Ejercicio41 {
         int odd = 0;
         long tmp = num;
 
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             long lastDigit = tmp % 10;
             if (lastDigit % 2 == 0)
                 even++;
@@ -28,10 +28,6 @@ public class Ejercicio41 {
                 odd++;
             tmp /= 10;
         }
-        if ((tmp % 10) % 2 == 0)
-            even++;
-        else
-            odd++;
             
         System.out.printf("El %d contiene %d dígitos pares y %d dígitos impares.", num, even, odd);
     }

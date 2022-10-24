@@ -32,7 +32,7 @@ public class Ejercicio51 {
         int units = 1;
         int lastDigit;
         int donutDigit = 0;
-        while (tmp / 10 > 0) {
+        while (tmp > 0) {
             lastDigit = (int) tmp % 10;
             if (lastDigit != 8 && lastDigit != 0) {
                 eatenNum += lastDigit * units;
@@ -41,9 +41,7 @@ public class Ejercicio51 {
                 donutDigit++;
             tmp /= 10;
         }
-        lastDigit = (int) tmp % 10;
-        if (lastDigit != 8 && lastDigit != 0)
-            eatenNum += lastDigit * units;
+
         if (donutDigit > 0)
             System.out.printf("El número %d después de ser comido por el gusano es %d", num, eatenNum);
         else
