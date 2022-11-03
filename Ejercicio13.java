@@ -13,6 +13,7 @@ public class Ejercicio13 {
         int pos = 0;
         int neg = 0;
         for (int i = 0; i < 10; i++) {
+            System.out.print("Por favor, introduce un número: ");
             int num = s.nextInt();
             if (num < 0)
                 neg++;
