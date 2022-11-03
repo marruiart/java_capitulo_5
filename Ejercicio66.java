@@ -17,10 +17,10 @@ public class Ejercicio66 {
         Scanner s = new Scanner(System.in);
         int height;
         do {
-            System.out.print("Introduce la altura de la pirámide: ");
+            System.out.print("Introduce la altura de la flecha: ");
             height = s.nextInt();
             if (height % 2 == 0 || height < 3)
-                System.out.print("La alura debe ser un número impar y mayor o igual a 3. ");
+                System.out.print("La altura debe ser un número impar y mayor o igual a 3. ");
         } while (height % 2 == 0 || height < 3);
         s.close();
 
