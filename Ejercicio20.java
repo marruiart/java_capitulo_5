@@ -27,7 +27,7 @@ public class Ejercicio20 {
         for (int i = 1; i <= height; i++) {
             for (int j = 1; j <= height * 2 - 1; j++) {
                 if (i == height)
-                    System.out.print("*");
+                    System.out.print(fillerChar);
                 else if (j <= height - i || j >= height + i || (j > height - i + 1 && j < height + i - 1))
                     System.out.print(" ");
                 else
