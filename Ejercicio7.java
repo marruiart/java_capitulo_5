@@ -22,7 +22,6 @@ public class Ejercicio7 {
             while (code > 9999 || code < 1000) {
                 System.out.print("El código debe tener 4 dígitos: ");
                 code = s.nextInt();
-                s.close();
             }
             if ((float) code / (float) correctCode == 1) {
                 System.out.print("¡La caja fuerte se ha abierto satisfactoriamente!");
@@ -31,6 +30,7 @@ public class Ejercicio7 {
             System.out.print("Lo siento, esa no es la combinación. ");
             attempt++;
         } while (attempt < 4);
+        s.close();
         System.out.print("No se permiten más intentos.");
     }
 }
