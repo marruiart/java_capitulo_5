@@ -25,6 +25,7 @@ public class Ejercicio7 {
             }
             if ((float) code / (float) correctCode == 1) {
                 System.out.print("¡La caja fuerte se ha abierto satisfactoriamente!");
+                s.close();
                 return;
             }
             System.out.print("Lo siento, esa no es la combinación. ");
