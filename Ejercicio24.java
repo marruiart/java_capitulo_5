@@ -16,8 +16,11 @@ import java.util.Scanner;
 public class Ejercicio24 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Por favor, introduce la altura de la pirámide: ");
-        int n = s.nextInt();
+        int n;
+        do {
+            System.out.print("Por favor, introduce la altura de la pirámide (3 a 9): ");
+            n = s.nextInt();
+        } while (n < 3 || n > 9);
         s.close();
         for (int i = 1; i <= n; i++) {
             for (int j = n - i; j >= 0; j--)
