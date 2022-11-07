@@ -31,8 +31,10 @@ public class Ejercicio48 {
             long lastDigit;
             while (tmp > 0) {
                 lastDigit = tmp % 10;
-                if (lastDigit == i)
+                if (lastDigit == i) {
                     isInNumber = true;
+                    break;
+                }
                 tmp /= 10;
             }
 
