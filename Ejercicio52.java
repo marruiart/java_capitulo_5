@@ -28,9 +28,8 @@ public class Ejercicio52 {
         s.close();
         int numLength = numLength(num);
         int units = (int) Math.pow(10, numLength - 1);
-        int firstDigit = (int) num / units;
-        long displacedNum = num - firstDigit * units;
-        displacedNum = displacedNum * 10 + firstDigit;
+        int firstDigit = (int) (num / units);
+        long displacedNum = num % units * 10 + firstDigit;
         System.out.printf("El número %d desplazado a la izquierda es %d", num, displacedNum);
     }
 }
