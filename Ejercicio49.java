@@ -29,12 +29,12 @@ public class Ejercicio49 {
         int min = Integer.MAX_VALUE;
         float average;
         int sum = 0;
-        int count = 1;
+        int count = 0;
         boolean primeNum;
         System.out.println(
                 "Por favor, vaya introduciendo números enteros positivos. Para terminar, introduzca un número primo: ");
         do {
-            System.out.print("Numero " + count + ": ");
+            System.out.print("Numero " + (count + 1) + ": ");
             num = s.nextInt();
             primeNum = isPrime(num);
             if (num >= 0 && !primeNum) {
@@ -48,9 +48,11 @@ public class Ejercicio49 {
                 System.out.print("Los números negativos no son válidos. ");
         } while (!primeNum);
         s.close();
-        count--;
-        average = (float) sum / count;
-        System.out.printf("Ha introducido %d números no primos. \nMáximo: %d \nMínimo: %d \nMedia: %.2f", count, max,
-                min, average);
+        if (count != 0) {
+            average = (float) sum / count;
+            System.out.printf("Ha introducido %d números no primos. \nMáximo: %d \nMínimo: %d \nMedia: %.2f", count,
+                    max, min, average);
+        } else
+            System.out.print("No se ha introducido ningún número no primo");
     }
 }
