@@ -22,17 +22,11 @@ public class Ejercicio47 {
                 System.out.println("La altura introducida no es correcta. ");
         } while (height % 2 == 0 || height < 5);
         s.close();
-        int width = 6;
         for (int i = 1; i <= height; i++) {
             if (i == 1 || i == height / 2 + 1 || i == height)
-                for (int j = width; j > 0; j--)
-                    System.out.print("M");
-            else {
-                System.out.print("M");
-                for (int j = width - 2; j > 0; j--)
-                    System.out.print(" ");
-                System.out.print("M");
-            }
+                System.out.print("MMMMMM");
+            else
+                System.out.print("M    M");
             System.out.println();
         }
     }
