@@ -14,11 +14,10 @@ public class Ejercicio52 {
 
     public static int numLength(long num) {
         int length = 0;
-        while (num / 10 > 0) {
+        while (num > 0) {
             num /= 10;
             length++;
         }
-        length++;
         return length;
     }
 

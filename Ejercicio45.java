@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Ejercicio45 {
 
     public static int numLength(long num) {
-        int length = 1;
-        while (num / 10 > 0) {
+        int length = 0;
+        while (num > 0) {
             num /= 10;
             length++;
         }
