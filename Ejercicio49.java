@@ -16,10 +16,9 @@ public class Ejercicio49 {
     public static boolean isPrime(int num) {
         if (num <= 1)
             return false;
-        for (int i = 2; i <= num / 2; i++) {
+        for (int i = 2; i <= num / 2; i++)
             if (num % i == 0)
                 return false;
-        }
         return true;
     }
 
@@ -28,8 +27,6 @@ public class Ejercicio49 {
         int num;
         int max = 0;
         int min = (int) Math.pow(2, 32);
-        System.out.print(min);
-        System.out.print(min + "\n");
         float average;
         int sum = 0;
         int count = 1;
@@ -53,7 +50,6 @@ public class Ejercicio49 {
         s.close();
         count--;
         average = (float) sum / count;
-        // System.out.println("\033[FFIN \n");
         System.out.printf("Ha introducido %d números no primos. \nMáximo: %d \nMínimo: %d \nMedia: %.2f", count, max,
                 min, average);
     }
