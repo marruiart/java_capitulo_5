@@ -26,7 +26,7 @@ public class Ejercicio49 {
         Scanner s = new Scanner(System.in);
         int num;
         int max = 0;
-        int min = (int) Math.pow(2, 32);
+        int min = Integer.MAX_VALUE;
         float average;
         int sum = 0;
         int count = 1;
