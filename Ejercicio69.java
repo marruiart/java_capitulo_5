@@ -19,18 +19,15 @@ public class Ejercicio69 {
         Scanner s = new Scanner(System.in);
         System.out.print("Introduce la altura de la pirámide: ");
         int height = s.nextInt();
-        int central = 4;
         for (int i = 1; i <= height; i++) {
             for (int j = height - i; j >= 0; j--)
                 System.out.print(" ");
             for (int j = i; j > 0; j--)
                 System.out.print("*");
-            for (int j = central; j > 0; j--) {
-                if (i % 2 == 0)
-                    System.out.print(" ");
-                else
-                    System.out.print("*");
-            }
+            if (i % 2 == 0)
+                System.out.print("    ");
+            else
+                System.out.print("****");
             for (int j = i; j > 0; j--)
                 System.out.print("*");
             System.out.println();
